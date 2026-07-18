@@ -1,26 +1,33 @@
 import { Star } from 'lucide-react'
-import feedbackPhoto from '../images/feedback-photo.png'
+import feedbackPhoto1 from '../images/feedback-photo.png'
+import feedbackPhoto2 from '../images/feedback-photo-2.svg'
+import feedbackPhoto3 from '../images/feedback-photo-3.svg'
+import feedbackPhoto4 from '../images/feedback-photo-4.svg'
 
 const REVIEWS = [
   {
     date: '05/02/2023',
     text: 'Много лет пользуюсь предпочитаю другим компании! Оперативный чат, посмотрим как будет дальше! Пока все отлично)',
     name: 'Василий Петров',
+    photo: feedbackPhoto1,
   },
   {
-    date: '05/02/2023',
-    text: 'Много лет пользуюсь предпочитаю другим компании! Оперативный чат, посмотрим как будет дальше! Пока все отлично)',
-    name: 'Василий Петров',
+    date: '12/03/2023',
+    text: 'Оформила страховку за 5 минут прямо перед вылетом. Все понятно, никаких скрытых условий. Буду обращаться еще!',
+    name: 'Анна Смирнова',
+    photo: feedbackPhoto2,
   },
   {
-    date: '05/02/2023',
-    text: 'Много лет пользуюсь предпочитаю другим компании! Оперативный чат, посмотрим как будет дальше! Пока все отлично)',
-    name: 'Василий Петров',
+    date: '28/04/2023',
+    text: 'Пользовался страховкой в Турции, пришлось обращаться в клинику. Все расходы покрыли быстро, без лишних вопросов.',
+    name: 'Игорь Кузнецов',
+    photo: feedbackPhoto3,
   },
   {
-    date: '05/02/2023',
-    text: 'Много лет пользуюсь предпочитаю другим компании! Оперативный чат, посмотрим как будет дальше! Пока все отлично)',
-    name: 'Василий Петров',
+    date: '09/06/2023',
+    text: 'Удобное приложение, доктор онлайн реально помог, когда ребенок заболел в поездке. Спасибо за сервис!',
+    name: 'Мария Иванова',
+    photo: feedbackPhoto4,
   },
 ]
 
@@ -57,7 +64,7 @@ function Feedback() {
 
               <div className="mt-5 flex items-center gap-3">
                 <img
-                  src={feedbackPhoto}
+                  src={review.photo}
                   alt={review.name}
                   className="h-8 w-8 rounded-full object-cover"
                 />
